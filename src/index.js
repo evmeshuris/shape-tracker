@@ -1,3 +1,6 @@
+import $ from 'jquery';
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Triangle from './triangle.js';
 import '../css/styles.css';
 
@@ -7,7 +10,7 @@ $(document).ready(function() {
     const length1 = $('#length1').val();
     const length2 = $('#length2').val();
     const length3 = $('#length3').val();
-    const triangle = new Triangle(length1, length2, length3)
+    const triangle = new Triangle(length1, length2, length3);
     const response = triangle.checkType();
     $('#response').append("<p>" + response + "</p>");
   });
